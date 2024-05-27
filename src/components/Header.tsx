@@ -11,7 +11,7 @@ const Header: React.FC = () => {
                     <span className="ml-2 text-gray-300">/ FRONTEND DEVELOPER</span>
                 </div>
                 <nav className="space-x-4">
-                    <Link to="/" className="text-gray-300 hover:text-accent">ABOUT ME</Link>
+                    <Link to="/zahra-fattahi" className="text-gray-300 hover:text-accent">ABOUT ME</Link>
                     <Link to="/resume" className="text-gray-300 hover:text-accent">RESUME</Link>
                 </nav>
             </div>
