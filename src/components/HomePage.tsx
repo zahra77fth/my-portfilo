@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faTwitter, faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons';
+import { faTwitter, faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons';
 
 interface Profile {
     name: string;
@@ -9,7 +9,7 @@ interface Profile {
     description: string;
     image: string;
     socialLinks: {
-        facebook: string;
+        // facebook: string;
         twitter: string;
         linkedin: string;
         github: string;
@@ -20,9 +20,20 @@ const HomePage: React.FC = () => {
     const [profile, setProfile] = useState<Profile | null>(null);
 
     useEffect(() => {
-        fetch('/data.json')
-            .then((response) => response.json())
-            .then((data) => setProfile(data.profile));
+        const fetchProfile = async () => {
+            try {
+                const response = await fetch(`${process.env.PUBLIC_URL}/data.json`);
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const data = await response.json();
+                setProfile(data.profile);
+            } catch (error) {
+                console.error('Error fetching profile:', error);
+            }
+        };
+
+        fetchProfile();
     }, []);
 
     if (!profile) {
@@ -34,7 +45,7 @@ const HomePage: React.FC = () => {
             <div className="container mx-auto flex flex-col md:flex-row items-center justify-center">
                 <div className="w-full md:w-1/3 p-4">
                     <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-                        <img className="w-32 h-32 rounded-full mx-auto" src={`${process.env.PUBLIC_URL}` + profile.image} alt={profile.name} />
+                        <img className="w-32 h-32 rounded-full mx-auto" src={profile.image} alt={profile.name} />
                         <h2 className="text-xl font-semibold mt-4">{profile.name}</h2>
                         <p className="text-gray-500">{profile.title}</p>
                         <div className="mt-4 flex justify-center space-x-4">

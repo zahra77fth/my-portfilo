@@ -33,13 +33,21 @@ const Resume: React.FC = () => {
     const [experienceData, setExperienceData] = useState<ExperienceProps[]>([]);
 
     useEffect(() => {
-        fetch('/data.json')
-            .then(response => response.json())
-            .then(data => {
+        const fetchResume = async () => {
+            try {
+                const response = await fetch(`${process.env.PUBLIC_URL}/data.json`);
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const data = await response.json();
                 setEducationData(data.education);
                 setExperienceData(data.experiences);
-            })
-            .catch(error => console.error('Error loading data:', error));
+            } catch (error) {
+                console.error('Error fetching profile:', error);
+            }
+        };
+
+        fetchResume();
     }, []);
 
     return (
