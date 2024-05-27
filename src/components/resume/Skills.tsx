@@ -1,19 +1,29 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+
+interface Skill {
+    title: string;
+    description: string;
+}
 
 const Skills: React.FC = () => {
+    const [skills, setSkills] = useState<Skill[]>([]);
+
+    useEffect(() => {
+        fetch('/data.json')
+            .then(response => response.json())
+            .then(data => setSkills(data.skills))
+            .catch(error => console.error('Error loading skills:', error));
+    }, []);
+
     return (
-        <section id="skills" className="bg-lightAccent p-8 flex items-start">
-            <div className="max-w-3xl">
-                <h2 className="text-3xl font-bold mb-4">Skills</h2>
-                <ul className="list-disc list-inside">
-                    <li>JavaScript</li>
-                    <li>TypeScript</li>
-                    <li>React</li>
-                    <li>Tailwind CSS</li>
-                    <li>Node.js</li>
-                </ul>
-            </div>
-        </section>
+        <div className="space-y-4 p-4 bg-white shadow-md rounded-lg max-w-2xl mx-auto">
+            {skills.map((skill, index) => (
+                <div key={index} className="mb-2">
+                    <h3 className="font-bold">{skill.title}</h3>
+                    <p>{skill.description}</p>
+                </div>
+            ))}
+        </div>
     );
 };
 

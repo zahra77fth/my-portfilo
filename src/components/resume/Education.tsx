@@ -1,16 +1,36 @@
 import React from 'react';
 
-const Education: React.FC = () => {
+interface EducationInfoProps {
+    startYear: number;
+    endYear: number;
+    universityName: string;
+    degreeLevel: string;
+    location: string;
+    description: string;
+}
+
+const Education: React.FC<EducationInfoProps> = ({
+       startYear,
+       endYear,
+       universityName,
+       degreeLevel,
+       location,
+       description
+   }) => {
     return (
-        <section id="education" className="bg-lightAccent p-8 flex items-start">
-            <div className="max-w-3xl">
-                <h2 className="text-3xl font-bold text-dark mb-4">Education</h2>
-                <ul className="list-disc list-inside">
-                    <li className="text-dark">University XYZ - B.S. in Computer Science</li>
-                    <li className="text-dark">Some Online Course - Full-Stack Web Development</li>
-                </ul>
+        <div className="p-4 bg-white shadow-md rounded-lg max-w-2xl mx-auto">
+            <div className="flex flex-col sm:flex-row justify-between">
+                <div className="flex-1">
+                    <h2 className="text-3xl text-secondary font-semibold mt-2">{universityName}</h2>
+                    <h4 className="text-accent font-bold text-lg">{startYear} – {endYear}</h4>
+                    <p className="mt-1">{degreeLevel}</p>
+                    <p className="mt-1">{location}</p>
+                </div>
+                <div className="flex-1 mt-4 sm:mt-0 sm:ml-6">
+                    <p>{description}</p>
+                </div>
             </div>
-        </section>
+        </div>
     );
 };
 

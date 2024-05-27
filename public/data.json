@@ -4,30 +4,30 @@
     "title": "Frontend Developer",
     "bio": "Hello, here's who I am & what I do",
     "description": "I am a dedicated Frontend Developer with extensive experience in creating dynamic, user-friendly web applications using modern technologies. Proficient in React, Vue, and Nuxt, I build responsive and intuitive interfaces with a strong command of JavaScript, HTML, and CSS. My expertise in Tailwind CSS and Bootstrap enables me to design visually appealing layouts. Committed to continuous learning and collaboration, I excel in team environments, working closely with designers and developers to deliver high-quality, innovative solutions.",
-    "image": "https://via.placeholder.com/150",
+    "image": "/me.jpg",
     "socialLinks": {
       "facebook": "#",
       "twitter": "#",
-      "linkedin": "#",
-      "instagram": "#"
+      "linkedin": "https://www.linkedin.com/in/zahra-fattahi-9b3911201/",
+      "github": "https://github.com/zahra77fth"
     }
   },
   "education": [
     {
-      "startYear": 2035,
-      "endYear": 2035,
-      "universityName": "University Name",
-      "degreeLevel": "Degree Level",
-      "location": "University Location",
-      "description": "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you."
+      "startYear": 2017,
+      "endYear": 2021,
+      "universityName": "Alzahra University",
+      "degreeLevel": "B.S. in Computer Sciences",
+      "location": "Tehran, Iran",
+      "description": "Alzahra University ranked 17 in Iran and 801 worldwide according to the physical sciences subject ranking. Graduated with a GPA of 7.5."
     },
     {
-      "startYear": 2035,
-      "endYear": 2035,
-      "universityName": "University Name",
-      "degreeLevel": "Degree Level",
-      "location": "University Location",
-      "description": "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you."
+      "startYear": 2021,
+      "endYear": 2024,
+      "universityName": "Kharazmi University",
+      "degreeLevel": "M.S. in Computer Sciences",
+      "location": "Tehran, Iran",
+      "description": "Currently pursuing a Master's degree with a thesis titled 'Using Data Mining for Network Intrusion Detection'. Expected to graduate by the end of August 2024."
     }
   ],
   "experiences": [
@@ -37,7 +37,7 @@
       "endYear": 2024,
       "employmentType": "Fulltime",
       "position": "Frontend Developer",
-      "companyWebsite": "nobitex.ir",
+      "companyWebsite": "https://nobitex.ir",
       "details": [
         {
           "title": "Interdepartmental Collaboration",
@@ -120,7 +120,39 @@
         }
       ]
     }
+  ],
+  "skills": [
+    {
+      "title": "Dedicated",
+      "description": "Committed to achieving project excellence, consistently delivering results on time."
+    },
+    {
+      "title": "Adaptive",
+      "description": "Successfully integrated new technologies into 4+ projects, enhancing project efficiency by 20%."
+    },
+    {
+      "title": "Effective Communication",
+      "description": "Facilitated cross-departmental cooperation, ensuring seamless collaboration among 3+ teams."
+    },
+    {
+      "title": "Self-Development",
+      "description": "Engaged in continuous learning, completing 10+ online courses to enhance skill set."
+    },
+    {
+      "title": "Innovative",
+      "description": "Introduced creative solutions that reduced error rates by 15% and saved 32 hours monthly."
+    },
+    {
+      "title": "Cultural Sensitivity and Flexible",
+      "description": "Adapted to diverse cultural environments and maintained flexibility in various scenarios."
+    },
+    {
+      "title": "Scrum",
+      "description": "Experienced in Scrum methodologies, effectively managing sprint planning and execution."
+    },
+    {
+      "title": "Agile",
+      "description": "Worked with cross-functional teams to adapt Agile principles, leading to improved project outcomes."
+    }
   ]
-}
-
 }
