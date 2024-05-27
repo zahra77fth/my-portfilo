@@ -7,6 +7,22 @@ interface Skill {
 
 const Skills: React.FC = () => {
     const [skills, setSkills] = useState<Skill[]>([]);
+    useEffect(() => {
+        const fetchSkills = async () => {
+            try {
+                const response = await fetch(`${process.env.PUBLIC_URL}/data.json`);
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                const data = await response.json();
+                setSkills(data.skills);
+            } catch (error) {
+                console.error('Error fetching profile:', error);
+            }
+        };
+
+        fetchSkills();
+    }, []);
 
     useEffect(() => {
         fetch('/data.json')

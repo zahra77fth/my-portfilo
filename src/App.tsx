@@ -11,7 +11,7 @@ const App: React.FC = () => {
             <Header />
             <main className="h-screen overflow-y-auto">
                 <Routes>
-                    <Route path="/" element={<HomePage />} />
+                    <Route path="/zahra-fattahi/" element={<HomePage />} />
                     <Route path="/resume" element={<Resume />} />
                     {/*<Route path="/contact" element={<Contact />} />*/}
                     {/*<Route path="/projects" element={<Projects />} />*/}
