@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/my-portfilo/static/css/main.ea7700f6.css",
-    "main.js": "/my-portfilo/static/js/main.9928805f.js",
-    "static/js/453.6a53440a.chunk.js": "/my-portfilo/static/js/453.6a53440a.chunk.js",
-    "index.html": "/my-portfilo/index.html",
-    "main.ea7700f6.css.map": "/my-portfilo/static/css/main.ea7700f6.css.map",
-    "main.9928805f.js.map": "/my-portfilo/static/js/main.9928805f.js.map",
-    "453.6a53440a.chunk.js.map": "/my-portfilo/static/js/453.6a53440a.chunk.js.map"
+    "main.css": "/zahra-fattahi/static/css/main.ea7700f6.css",
+    "main.js": "/zahra-fattahi/static/js/main.8a702f03.js",
+    "static/js/453.6a53440a.chunk.js": "/zahra-fattahi/static/js/453.6a53440a.chunk.js",
+    "index.html": "/zahra-fattahi/index.html",
+    "main.ea7700f6.css.map": "/zahra-fattahi/static/css/main.ea7700f6.css.map",
+    "main.8a702f03.js.map": "/zahra-fattahi/static/js/main.8a702f03.js.map",
+    "453.6a53440a.chunk.js.map": "/zahra-fattahi/static/js/453.6a53440a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ea7700f6.css",
-    "static/js/main.9928805f.js"
+    "static/js/main.8a702f03.js"
   ]
 }
