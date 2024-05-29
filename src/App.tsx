@@ -8,16 +8,18 @@ import Footer from './components/Footer';
 const App: React.FC = () => {
     return (
         <Router>
-            <Header />
-            <main className="h-screen overflow-y-auto">
-                <Routes>
-                    <Route path="/zahra-fattahi/" element={<HomePage />} />
-                    <Route path="/resume" element={<Resume />} />
-                    {/*<Route path="/contact" element={<Contact />} />*/}
-                    {/*<Route path="/projects" element={<Projects />} />*/}
-                </Routes>
-            </main>
-            <Footer />
+            <div className="h-screen flex flex-col">
+                <Header />
+                <main className="flex-grow overflow-y-auto">
+                    <Routes>
+                        <Route path="/zahra-fattahi/" element={<HomePage />} />
+                        <Route path="/zahra-fattahi/resume" element={<Resume />} />
+                        {/*<Route path="/contact" element={<Contact />} />*/}
+                        {/*<Route path="/projects" element={<Projects />} />*/}
+                    </Routes>
+                </main>
+                <Footer />
+            </div>
         </Router>
     );
 };

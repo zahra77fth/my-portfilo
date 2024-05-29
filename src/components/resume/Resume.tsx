@@ -51,7 +51,7 @@ const Resume: React.FC = () => {
     }, []);
 
     return (
-        <div className="relative bg-lightAccent py-24">
+        <div className="relative bg-lightAccent">
             <div className="container mx-auto min-h-screen p-4">
                 <div className="bg-accent shadow-md rounded-lg p-4 fixed w-96 mx-auto bottom-24 left-0 right-0 z-10 flex justify-around">
                     <a href="#skills" className="flex cursor-pointer">

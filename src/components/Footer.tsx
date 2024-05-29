@@ -4,7 +4,7 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Footer: React.FC = () => {
     return (
-        <footer className="bg-primary text-white p-4 fixed bottom-0 w-full">
+        <footer className="bg-primary text-white p-4 bottom-0 w-full">
             <div className="container mx-auto flex justify-between items-center">
                 <div>
                     <p>&copy; {new Date().getFullYear()} My Portfolio. All rights reserved.</p>
