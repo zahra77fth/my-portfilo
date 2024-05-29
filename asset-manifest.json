@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/zahra-fattahi/static/css/main.73186c84.css",
-    "main.js": "/zahra-fattahi/static/js/main.643ecb32.js",
+    "main.js": "/zahra-fattahi/static/js/main.14e08f57.js",
     "static/js/453.6d9481ca.chunk.js": "/zahra-fattahi/static/js/453.6d9481ca.chunk.js",
     "index.html": "/zahra-fattahi/index.html",
     "main.73186c84.css.map": "/zahra-fattahi/static/css/main.73186c84.css.map",
-    "main.643ecb32.js.map": "/zahra-fattahi/static/js/main.643ecb32.js.map",
+    "main.14e08f57.js.map": "/zahra-fattahi/static/js/main.14e08f57.js.map",
     "453.6d9481ca.chunk.js.map": "/zahra-fattahi/static/js/453.6d9481ca.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.73186c84.css",
-    "static/js/main.643ecb32.js"
+    "static/js/main.14e08f57.js"
   ]
 }
